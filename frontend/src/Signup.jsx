@@ -20,7 +20,7 @@ function Signup() {
     }
 
     function addUser() {
-        var addDetails = axios.post("http://localhost:5000/add", { username: user, password: pass })
+        var addDetails = axios.post("https://backend-begin-backend.onrender.com/add", { username: user, password: pass })
         console.log(addDetails)
         addDetails.then((data) => {
             console.log(data)
